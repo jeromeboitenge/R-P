@@ -1,6 +1,6 @@
 import { userRoles } from "src/enums"
 
-export class CreateSIgnupDto {
+export class CreateSignupDto {
     name: string
     email: string
     password: string
