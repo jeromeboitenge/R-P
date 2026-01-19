@@ -7,6 +7,6 @@ export class CreateUserDto {
     @Max(40)
     name: string;
     @IsString()
-    @IsEmail
+    @IsEmail()
     email: string
 }
