@@ -1,7 +1,7 @@
 export enum userRoles {
-    Manager = 'manager',
-    Admin = 'admin',
-    User = 'user',
-    Finance = 'finance'
+    Manager = 'MANAGER',
+    Admin = 'ADMIN',
+    User = 'EMPLOYEE',
+    Finance = 'FINANCE'
 
 }
