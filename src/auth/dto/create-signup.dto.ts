@@ -1,4 +1,4 @@
-import { userRoles } from "src/enums/enums"
+import { userRoles } from "src/enums"
 
 export class CreateSIgnupDto {
     name: string
