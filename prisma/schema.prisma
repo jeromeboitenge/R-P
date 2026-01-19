@@ -48,16 +48,14 @@ enum PaymentMethodType {
 
 model User {
   id       String   @id @default(uuid())
-  name     String   @db.VarChar(100)
-  email    String   @unique @db.VarChar(255)
-  password String   @db.VarChar(255)
+  name     String
+  email    String   @unique
+  password String
   role     UserRole @default(EMPLOYEE)
 
   departmentId String @map("department_id")
 
-  isActive            Boolean   @default(true) @map("is_active")
-  failedLoginAttempts Int       @default(0) @map("failed_login_attempts")
-  accountLockedUntil  DateTime? @map("account_locked_until")
+  isActive Boolean @default(true) @map("is_active")
 
   otpHash      String?
   otpExpiresAt DateTime?
